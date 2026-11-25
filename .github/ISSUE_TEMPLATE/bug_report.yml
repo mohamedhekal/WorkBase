@@ -1,0 +1,78 @@
+name: Bug report / بلاغ عن مشكلة
+description: Something in WorkBase doesn't work as expected. / شيء في WorkBase لا يعمل كما ينبغي.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve WorkBase. **Please don't include passwords, vault contents, client names or amounts.** Blur screenshots if needed.
+        شكرًا لمساعدتك. **من فضلك لا تكتب كلمات مرور أو محتوى الخزنة أو أسماء عملاء أو مبالغ.** غطِّ أي بيانات خاصة في الصور.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? / ماذا حدث؟
+      placeholder: A short description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / خطوات تكرار المشكلة
+      placeholder: |
+        1. Open …
+        2. Click …
+        3. See …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect? / ما المتوقع؟
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area / القسم
+      options:
+        - Projects & tasks / المشاريع والمهام
+        - Payments, invoices & reports / المدفوعات والفواتير والتقارير
+        - Meetings & Calendar / الاجتماعات والتقويم
+        - Infrastructure, monitoring & vault / البنية التحتية والمراقبة والخزنة
+        - Widgets & menu bar / الودجتس وشريط القوائم
+        - Tabaq (desktop companion) / طبق
+        - Backup & export / النسخ الاحتياطي والتصدير
+        - Purchase check / التحقق من الشراء
+        - Arabic / RTL / العربية
+        - Other / أخرى
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: WorkBase version / إصدار WorkBase
+      description: Settings › About / الإعدادات › حول
+      placeholder: "1.0.0 (1)"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version / إصدار macOS
+      placeholder: "macOS 26.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: App language / لغة التطبيق
+      options: [English, العربية]
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else / صور أو تفاصيل إضافية
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy / الخصوصية
+      options:
+        - label: I removed private information (passwords, client details, amounts). / حذفت أي بيانات خاصة.
+          required: true

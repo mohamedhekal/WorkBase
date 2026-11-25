@@ -1,0 +1,21 @@
+name: Feature request / طلب ميزة
+description: An idea to make WorkBase better. / فكرة لتحسين WorkBase.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do? / ما الذي تحاول عمله؟
+      description: Describe the situation or problem, not only the solution. / صف الموقف أو المشكلة، وليس الحل فقط.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea / فكرتك
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you handle it today? / كيف تتعامل معها الآن؟

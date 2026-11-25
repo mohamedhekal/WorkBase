@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and tips / أسئلة ونصائح
+    url: https://github.com/mohamedhekal/WorkBase/discussions
+    about: Ask how to do something or share how you use WorkBase. / اسأل أو شارك طريقتك.
+  - name: Support page / صفحة الدعم
+    url: https://mohamedhekal.github.io/WorkBase/support.html
+    about: Answers to common questions (backups, new Mac, widgets, purchase). / إجابات الأسئلة الشائعة.
+  - name: Private support by email / دعم خاص بالبريد
+    url: mailto:mohamed.kh.hamad@icloud.com
+    about: For anything involving your own data or purchase. / لأي أمر يخص بياناتك أو شراءك.
